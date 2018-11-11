@@ -25,8 +25,8 @@ export class SvgDotComponent implements OnInit {
   
     clicked(event: any) {
       d3.select(event.target).append('circle')
-        .attr('cx', event.x)
-        .attr('cy', event.y)
+        .attr('cx', event.x-6)
+        .attr('cy', event.y - 100)
         .attr('r', () => {
           return this.radius;
         })
